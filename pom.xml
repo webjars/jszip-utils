@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jszip-utils</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <name>jszip-utils</name>
     <description>WebJar for jszip-utils</description>
     <url>http://webjars.org</url>
@@ -50,7 +50,7 @@
         <url>http://github.com/webjars/jszip-utils</url>
         <connection>scm:git:https://github.com/webjars/jszip-utils.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jszip-utils.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>jszip-utils-0.0.2</tag>
     </scm>
 
     <build>
@@ -65,13 +65,13 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="download archive"/>
-                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="download archive" />
+                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}/dist"/>
+                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}/dist" />
                                 </move>
                             </target>
                         </configuration>
