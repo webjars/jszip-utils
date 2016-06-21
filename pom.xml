@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jszip-utils</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>jszip-utils</name>
     <description>WebJar for jszip-utils</description>
     <url>http://webjars.org</url>
@@ -50,7 +50,7 @@
         <url>http://github.com/webjars/jszip-utils</url>
         <connection>scm:git:https://github.com/webjars/jszip-utils.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jszip-utils.git</developerConnection>
-        <tag>jszip-utils-0.0.2</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <build>
